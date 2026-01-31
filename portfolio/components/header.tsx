@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pointer-events-none">
@@ -10,9 +12,9 @@ export default function Header() {
         </div>
 
         {/* Center */}
-        <nav className="hidden md:flex gap-10">
-          <span className="text-blue-500">01 About</span>
-          <span>02 Works</span>
+        <nav className="text-white hidden md:flex gap-10">
+          <span className="">01 About</span>
+          <Link href={'/gallery'}><span>02 Gallery</span></Link>
           <span>03 Contact</span>
         </nav>
 

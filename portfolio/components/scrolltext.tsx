@@ -21,7 +21,7 @@ export default function ScrollText() {
             className="relative mt-15 h-[25vh] bg-black overflow-hidden border-t border-neutral-800"
         >
             {/* Sticky container */}
-            <p className="mt-6 text-xs tracking-[0.3em] uppercase text-neutral-500">
+            <p className="mt-4 ml-6 text-xs tracking-[0.3em] uppercase text-neutral-500">
                 03 - Philosophy
             </p>
             <div className="sticky top-0 flex items-center">
@@ -38,24 +38,43 @@ export default function ScrollText() {
 }
 
 function TextRow() {
+    const words = [
+        "SYSTEM",
+        "MESH",
+        "MATERIAL",
+        "STRUCTURE",
+        "NOISE",
+        "GEOMETRY",
+        "RENDER",
+        "DISCIPLINE",
+    ]
+
     return (
         <div className="flex gap-16">
-            {[
-                "SYSTEM",
-                "MESH",
-                "MATERIAL",
-                "STRUCTURE",
-                "NOISE",
-                "GEOMETRY",
-                "DISCIPLINE",
-            ].map((word, i) => (
-                <span
-                    key={i}
-                    className="font-serif text-[clamp(3rem,8vw,9rem)] tracking-tight text-neutral-200"
-                >
-                    {word}
-                </span>
-            ))}
+            {words.map((word, i) => {
+                const isOutline = i % 2 === 1
+
+                return (
+                    <span
+                        key={i}
+                        className={`
+              font-serif
+              text-[clamp(3rem,8vw,9rem)]
+              tracking-tight
+              ${isOutline
+                                ? `
+                    text-black
+                    [-webkit-text-stroke:0.5px_white]
+                  `
+                                : "text-white"
+                            }
+            `}
+                    >
+                        {word}
+                    </span>
+                )
+            })}
         </div>
     )
 }
+
