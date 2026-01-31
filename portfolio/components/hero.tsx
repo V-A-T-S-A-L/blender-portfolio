@@ -30,18 +30,34 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full bg-black text-white overflow-hidden"
+      className="
+        relative h-screen w-full overflow-hidden
+        bg-background text-foreground
+        dark:bg-black
+      "
     >
       {/* Left Editorial Text */}
       <motion.div
         style={{ y: yLeft, opacity }}
         className="absolute left-8 top-1/2 z-20 max-w-md -translate-y-1/2"
       >
-        <p className="mb-6 text-xs tracking-[0.3em] uppercase text-neutral-500">
+        <p
+          className="
+            mb-6 text-xs tracking-[0.3em] uppercase
+            text-neutral-600 dark:text-neutral-400
+          "
+        >
           01 - Process
         </p>
 
-        <h1 className="italic font-serif text-[clamp(3rem,6vw,6rem)] leading-[0.95]">
+        <h1
+          className="
+            italic font-serif
+            text-[clamp(3rem,6vw,6rem)]
+            leading-[0.95]
+            text-neutral-900 dark:text-neutral-100
+          "
+        >
           Procedural
           <br />
           Form
@@ -53,18 +69,30 @@ export default function Hero() {
         style={{ y: yRight, opacity }}
         className="absolute right-8 bottom-24 z-20 text-right max-w-md"
       >
-        <p className="mb-6 text-xs tracking-[0.3em] uppercase text-neutral-500">
+        <p
+          className="
+            mb-6 text-xs tracking-[0.3em] uppercase
+            text-neutral-600 dark:text-neutral-400
+          "
+        >
           02 - Material
         </p>
 
-        <h2 className="italic font-serif text-[clamp(2.5rem,5vw,5rem)] leading-[0.95]">
+        <h2
+          className="
+            italic font-serif
+            text-[clamp(2.5rem,5vw,5rem)]
+            leading-[0.95]
+            text-neutral-900 dark:text-neutral-100
+          "
+        >
           Noise
           <br />
           Systems
         </h2>
       </motion.div>
 
-      {/* 🎥 Center 3D System (Smooth Exit) */}
+      {/* 🎥 Center 3D System */}
       <AnimatePresence>
         {isInView && (
           <motion.div
@@ -86,7 +114,11 @@ export default function Hero() {
       {/* Scroll Hint */}
       <motion.div
         style={{ opacity }}
-        className="absolute bottom-6 left-1/2 z-20 -translate-x-1/2 text-[10px] tracking-widest text-neutral-500"
+        className="
+          absolute bottom-6 left-1/2 z-20 -translate-x-1/2
+          text-[10px] tracking-widest
+          text-neutral-600 dark:text-neutral-400
+        "
       >
         Scroll
       </motion.div>

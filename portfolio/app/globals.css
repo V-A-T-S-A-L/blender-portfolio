@@ -119,13 +119,16 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
 @layer base {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-family: "Playfair Display", serif;
     font-weight: 500;
   }
@@ -146,6 +149,7 @@
 }
 
 ::selection {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(39, 39, 39);
 }
+
