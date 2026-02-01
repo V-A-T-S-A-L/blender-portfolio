@@ -11,7 +11,7 @@ import Link from "next/link"
 
 export default function PortfolioPage() {
   return (
-    <div className="bg-background text-foreground overflow-x-hidden">
+    <div className="bg-background dark:bg-black text-foreground overflow-x-hidden">
       <Header />
 
       <Hero />
