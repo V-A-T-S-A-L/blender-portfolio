@@ -5,9 +5,9 @@ import { useState } from "react"
 import clsx from "clsx"
 
 const images = [
-  { src: "untitled41.jpg", position: "center" },
-  { src: "hero-bg.jpg", position: "top" },
-  { src: "untitled52.jpg", position: "center" },
+  { src: "renders/stagnant-crossing.jpg", position: "center" },
+  { src: "renders/gilded-medium.jpg", position: "top" },
+  { src: "renders/cherry-waves.jpg", position: "center" },
 ]
 
 export default function PillarGallery() {

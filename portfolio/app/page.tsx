@@ -40,16 +40,16 @@ export default function PortfolioPage() {
         </p>
 
         {/* Link */}
-        <Link href="/gallery">
-          <div className="mt-6 sm:mt-10 flex justify-center group">
+        <div className="mt-6 sm:mt-10 flex justify-center group">
+          <Link href="/gallery">
             <span className="inline-flex items-center gap-2 text-lg sm:text-xl md:text-[20px] tracking-[0.3em] sm:tracking-[0.35em] uppercase
         text-neutral-700 dark:text-neutral-300
         transition-all group-hover:text-neutral-500 dark:group-hover:text-neutral-400">
               Explore Gallery
               <ArrowUpRight className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </span>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
 
       <About />
