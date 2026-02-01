@@ -18,27 +18,50 @@ export default function Header() {
           flex items-center justify-between
           text-[10px] sm:text-xs
           tracking-widest uppercase
-          text-neutral-500
+          text-neutral-600 dark:text-neutral-400
         "
       >
         {/* Left */}
-        <Link href={'/'}><span className="whitespace-nowrap">Vatsal Shah</span></Link>
+        <Link href="/" className="whitespace-nowrap">
+          Vatsal Shah
+        </Link>
 
-        {/* Center (desktop only) */}
-        <nav className="hidden md:flex gap-8 lg:gap-10 dark:text-white text-black">
-          <Link href="/#about">01 About</Link>
-          <Link href="/gallery">02 Gallery</Link>
-          <Link href="/#contact">03 Contact</Link>
+        {/* Center (desktop) */}
+        <nav className="hidden md:flex gap-8 lg:gap-10 text-foreground">
+          <Link
+            href="/#about"
+            className="hover:text-neutral-500 dark:hover:text-neutral-300 transition-colors"
+          >
+            01 About
+          </Link>
+          <Link
+            href="/gallery"
+            className="hover:text-neutral-500 dark:hover:text-neutral-300 transition-colors"
+          >
+            02 Gallery
+          </Link>
+          <Link
+            href="/#contact"
+            className="hover:text-neutral-500 dark:hover:text-neutral-300 transition-colors"
+          >
+            03 Contact
+          </Link>
         </nav>
 
         {/* Right */}
         <div className="flex items-center gap-4">
-          <span className="hidden sm:block">Portfolio / 2026</span>
+          <span className="hidden sm:block text-neutral-500 dark:text-neutral-400">
+            Portfolio / 2026
+          </span>
 
           {/* Mobile menu trigger */}
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden tracking-[0.3em]"
+            className="
+              md:hidden
+              tracking-[0.3em]
+              text-neutral-600 dark:text-neutral-400
+            "
           >
             {open ? "CLOSE" : "MENU"}
           </button>
@@ -51,38 +74,39 @@ export default function Header() {
       <AnimatePresence>
         {open && (
           <motion.nav
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
+            exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="
               pointer-events-auto
               md:hidden
               mt-4 mx-4
               rounded-xl
-              border border-neutral-800
-              bg-black/90 backdrop-blur
+              border border-neutral-200 dark:border-neutral-800
+              bg-background/90 dark:bg-black/90
+              backdrop-blur
             "
           >
-            <div className="flex flex-col divide-y divide-neutral-800 text-xs tracking-widest uppercase">
+            <div className="flex flex-col divide-y divide-neutral-200 dark:divide-neutral-800 text-xs tracking-widest uppercase text-foreground">
               <Link
-                href="#about"
+                href="/#about"
                 onClick={() => setOpen(false)}
-                className="px-6 py-4 hover:text-white"
+                className="px-6 py-4 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors"
               >
                 01 About
               </Link>
               <Link
                 href="/gallery"
                 onClick={() => setOpen(false)}
-                className="px-6 py-4 hover:text-white"
+                className="px-6 py-4 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors"
               >
                 02 Gallery
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 onClick={() => setOpen(false)}
-                className="px-6 py-4 hover:text-white"
+                className="px-6 py-4 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors"
               >
                 03 Contact
               </Link>

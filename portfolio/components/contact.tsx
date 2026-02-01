@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react"
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative mt-30 mb-20 bg-background text-foreground dark:bg-black">
+    <section id="contact" className="relative mt-20 mb-20 bg-background text-foreground dark:bg-black">
       <div className="mx-auto max-w-[1200px] px-6 text-center">
 
         {/* Label */}

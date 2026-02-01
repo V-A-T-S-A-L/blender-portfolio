@@ -43,12 +43,15 @@ export default function Hero() {
       >
         <p
           className="
-            mb-6 text-xs tracking-[0.3em] uppercase
-            text-neutral-600 dark:text-neutral-400
-          "
+          mb-6 text-xs tracking-[0.3em] uppercase
+        text-white
+        sm:text-neutral-600
+        dark:text-neutral-400
+      "
         >
           01 - Process
         </p>
+
 
         <h1
           className="
@@ -58,9 +61,9 @@ export default function Hero() {
             text-neutral-900 dark:text-neutral-100
           "
         >
-          Procedural
+          Intricate
           <br />
-          Form
+          Structures
         </h1>
       </motion.div>
 
@@ -72,7 +75,7 @@ export default function Hero() {
         <p
           className="
             mb-6 text-xs tracking-[0.3em] uppercase
-            text-neutral-600 dark:text-neutral-400
+            text-white sm:text-neutral-600 dark:text-neutral-400
           "
         >
           02 - Material
@@ -86,9 +89,9 @@ export default function Hero() {
             text-neutral-900 dark:text-neutral-100
           "
         >
-          Noise
+          Controlled
           <br />
-          Systems
+          Noise
         </h2>
       </motion.div>
 
