@@ -28,9 +28,9 @@ export default function Contact() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="font-serif italic text-[clamp(2.4rem,4.5vw,4rem)] leading-tight text-neutral-900 dark:text-neutral-100"
         >
-          Open to commissions,
+          Open to collaborations 
           <br />
-          collaborations, and dialogue.
+          and dialogue.
         </motion.h2>
 
         {/* Supporting text */}
