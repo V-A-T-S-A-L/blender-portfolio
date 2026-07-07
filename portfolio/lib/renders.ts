@@ -4,20 +4,16 @@ export const renders = [
     title: "The Eerie",
   },
   {
-    src: "renders/cherry-waves.jpg",
-    title: "Cherry Waves",
+    src: "renders/schism.jpg",
+    title: "Tethered Schism",
   },
   {
-    src: "renders/stagnant-crossing.jpg",
-    title: "Stagnant Crossing",
+    src: "renders/entangle.jpg",
+    title: "Entanglement",
   },
   {
-    src: "renders/cicada-bloom.jpg",
-    title: "Cicada's Bloom",
-  },
-  {
-    src: "renders/gilded-medium.jpg",
-    title: "Gilded Medium",
+    src: "renders/neon.jpg",
+    title: "Neon Nights",
   },
   {
     src: "renders/decayed-wealth.jpg",
@@ -32,12 +28,12 @@ export const renders = [
     title: "Neural Apex",
   },
   {
-    src: "renders/summit.jpg",
-    title: "The Summit of Five Lights",
+    src: "renders/kraken.jpg",
+    title: "The Kraken's Court",
   },
   {
-    src: "renders/schism.jpg",
-    title: "Tethered Schism",
+    src: "renders/cherry-waves.jpg",
+    title: "Cherry Waves",
   },
   {
     src: "renders/mandala.jpg",
@@ -52,11 +48,43 @@ export const renders = [
     title: "Weaving Realities",
   },
   {
-    src: "renders/kraken.jpg",
-    title: "The Kraken's Court",
+    src: "renders/summit.jpg",
+    title: "The Summit of Five Lights",
   },
   {
     src: "renders/theia.jpg",
     title: "Theia's Gaze",
   },
+  {
+    src: "renders/celestial.jpg",
+    title: "Celestial Equilibrium",
+  },
+  {
+    src: "renders/cicada-bloom.jpg",
+    title: "Cicada's Bloom",
+  },
+  {
+    src: "renders/shrine.jpg",
+    title: "The Last Shrine",
+  },
+  {
+    src: "renders/stagnant-crossing.jpg",
+    title: "Stagnant Crossing",
+  },
+  {
+    src: "renders/gilded-medium.jpg",
+    title: "Gilded Medium",
+  },
+  {
+    src: "renders/midas.jpg",
+    title: "Midas Touch",
+  },
+  {
+    src: "renders/origins.jpg",
+    title: "ORIGINS",
+  },
+  // {
+  //   src: "renders/arrival.jpg",
+  //   title: "Slavic Arrival",
+  // },
 ]

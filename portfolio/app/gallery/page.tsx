@@ -31,7 +31,7 @@ export default function GalleryPage() {
                     </div>
 
                     {/* Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div className="columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8">
                         {renders.map((item, i) => (
                             <motion.figure
                                 key={i}
@@ -39,26 +39,27 @@ export default function GalleryPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: i * 0.03 }}
-                                className="group cursor-pointer"
+                                className="break-inside-avoid group cursor-pointer mb-8"
                                 onClick={() => setActive(item)}
                             >
-                                <div className="relative rounded-lg aspect-video overflow-hidden bg-neutral-900">
+                                <div className="overflow-hidden rounded-lg border border-zinc-800 bg-neutral-900">
                                     <img
                                         src={item.src}
                                         alt={item.title}
                                         className="
-                    h-full w-full object-cover
-                    transition-all
-                    duration-700
-                    ease-out
-                    group-hover:scale-[1.03]
-                  "
+                        w-full
+                        h-auto
+                        object-cover
+                        transition-transform
+                        duration-700
+                        ease-out
+                        group-hover:scale-[1.03]
+                    "
                                     />
                                 </div>
 
                                 <figcaption className="mt-3 flex justify-between text-xs text-neutral-500">
-                                    <span className="font-serif italic">{item.title}</span>
-                                    {/* <span>{item.year}</span> */}
+                                    <span className="font-serif italic">・ {item.title}</span>
                                 </figcaption>
                             </motion.figure>
                         ))}
@@ -72,7 +73,7 @@ export default function GalleryPage() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="fixed inset-0 z-[100] bg-black/90 backdrop-blur-sm flex items-center justify-center px-6"
+                            className="fixed inset-0 z-100 bg-black/90 backdrop-blur-sm flex items-center justify-center p-6"
                             onClick={() => setActive(null)}
                         >
                             <motion.div
@@ -80,16 +81,23 @@ export default function GalleryPage() {
                                 animate={{ scale: 1, opacity: 1 }}
                                 exit={{ scale: 0.96, opacity: 0 }}
                                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                                className="relative max-w-6xl w-full"
+                                className="relative flex flex-col items-center max-w-[95vw] max-h-[95vh]"
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <img
                                     src={active.src}
                                     alt={active.title}
-                                    className="w-full h-auto object-contain"
+                                    className="
+                        max-w-[95vw]
+                        max-h-[85vh]
+                        w-auto
+                        h-auto
+                        object-contain
+                        rounded-lg
+                    "
                                 />
 
-                                <div className="mt-6 flex justify-between text-sm text-neutral-400">
+                                <div className="mt-4 w-full flex justify-between text-sm text-neutral-400">
                                     <span className="font-serif italic">{active.title}</span>
                                     {/* <span>{active.year}</span> */}
                                 </div>
