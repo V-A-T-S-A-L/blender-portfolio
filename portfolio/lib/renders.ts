@@ -24,12 +24,8 @@ export const renders = [
     title: "The Biosphere Protocol",
   },
   {
-    src: "renders/neural-apex.jpg",
-    title: "Neural Apex",
-  },
-  {
-    src: "renders/kraken.jpg",
-    title: "The Kraken's Court",
+    src: "renders/memento.jpg",
+    title: "Memento Mori",
   },
   {
     src: "renders/cherry-waves.jpg",
@@ -82,6 +78,14 @@ export const renders = [
   {
     src: "renders/origins.jpg",
     title: "ORIGINS",
+  },
+  {
+    src: "renders/kraken.jpg",
+    title: "The Kraken's Court",
+  },
+  {
+    src: "renders/neural-apex.jpg",
+    title: "Neural Apex",
   },
   // {
   //   src: "renders/arrival.jpg",
