@@ -4,8 +4,8 @@ export const renders = [
     title: "The Eerie",
   },
   {
-    src: "renders/schism.jpg",
-    title: "Tethered Schism",
+    src: "renders/stranded.jpg",
+    title: "Stranded",
   },
   {
     src: "renders/entangle.jpg",
@@ -35,9 +35,10 @@ export const renders = [
     src: "renders/mandala.jpg",
     title: "Mandala of the Unspoken",
   },
+  
   {
-    src: "renders/symbiotic.jpg",
-    title: "Symbiotic",
+    src: "renders/schism.jpg",
+    title: "Tethered Schism",
   },
   {
     src: "renders/weave.jpg",
@@ -55,9 +56,13 @@ export const renders = [
     src: "renders/celestial.jpg",
     title: "Celestial Equilibrium",
   },
+  // {
+  //   src: "renders/cicada-bloom.jpg",
+  //   title: "Cicada's Bloom",
+  // },
   {
-    src: "renders/cicada-bloom.jpg",
-    title: "Cicada's Bloom",
+    src: "renders/symbiotic.jpg",
+    title: "Symbiotic",
   },
   {
     src: "renders/shrine.jpg",
