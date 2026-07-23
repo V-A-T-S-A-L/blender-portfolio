@@ -28,14 +28,13 @@ export const renders = [
     title: "Memento Mori",
   },
   {
-    src: "renders/cherry-waves.jpg",
-    title: "Cherry Waves",
+    src: "renders/blinding.jpg",
+    title: "Blinding Lights",
   },
   {
-    src: "renders/mandala.jpg",
-    title: "Mandala of the Unspoken",
-  },
-  
+    src: "renders/cherry-waves.jpg",
+    title: "Cherry Waves",
+  },  
   {
     src: "renders/schism.jpg",
     title: "Tethered Schism",
@@ -53,16 +52,20 @@ export const renders = [
     title: "Theia's Gaze",
   },
   {
+    src: "renders/cicada-bloom.jpg",
+    title: "Cicada's Bloom",
+  },
+  {
     src: "renders/celestial.jpg",
     title: "Celestial Equilibrium",
   },
-  // {
-  //   src: "renders/cicada-bloom.jpg",
-  //   title: "Cicada's Bloom",
-  // },
   {
-    src: "renders/symbiotic.jpg",
-    title: "Symbiotic",
+    src: "renders/mandala.jpg",
+    title: "Mandala of the Unspoken",
+  },
+  {
+    src: "renders/arrival.jpg",
+    title: "Slavic Arrival",
   },
   {
     src: "renders/shrine.jpg",
@@ -92,8 +95,9 @@ export const renders = [
     src: "renders/neural-apex.jpg",
     title: "Neural Apex",
   },
-  // {
-  //   src: "renders/arrival.jpg",
-  //   title: "Slavic Arrival",
-  // },
+  {
+    src: "renders/symbiotic.jpg",
+    title: "Symbiotic",
+  },
+  
 ]

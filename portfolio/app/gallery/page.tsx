@@ -59,7 +59,7 @@ export default function GalleryPage() {
                                 </div>
 
                                 <figcaption className="mt-3 flex justify-between text-xs text-neutral-500">
-                                    <span className="font-serif italic">・ {item.title}</span>
+                                    <span className="font-serif italic">-{item.title}-</span>
                                 </figcaption>
                             </motion.figure>
                         ))}
