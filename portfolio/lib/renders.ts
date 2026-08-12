@@ -40,6 +40,10 @@ export const renders = [
     title: "Tethered Schism",
   },
   {
+    src: "renders/relic.jpg",
+    title: "Posthuman ARTEFACT",
+  },
+  {
     src: "renders/weave.jpg",
     title: "Weaving Realities",
   },
