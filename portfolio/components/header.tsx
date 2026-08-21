@@ -51,7 +51,7 @@ export default function Header() {
         {/* Right */}
         <div className="flex items-center gap-4">
           <span className="hidden sm:block text-neutral-500 dark:text-neutral-400">
-            Portfolio / 2026
+            Archive / 2026
           </span>
 
           {/* Mobile menu trigger */}

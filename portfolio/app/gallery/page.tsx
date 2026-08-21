@@ -5,12 +5,14 @@ import { motion, AnimatePresence } from "framer-motion"
 import Header from "@/components/header"
 import { renders } from "@/lib/renders"
 import { Heart } from "lucide-react"
+import LoadingScreen from "@/components/loading-screen"
 
 export default function GalleryPage() {
     const [active, setActive] = useState<null | typeof renders[0]>(null)
 
     return (
         <>
+            <LoadingScreen />
             <section className="min-h-screen bg-background text-foreground dark:bg-black dark:text-white">
                 <Header />
 
@@ -59,7 +61,7 @@ export default function GalleryPage() {
                                 </div>
 
                                 <figcaption className="mt-3 flex justify-between text-xs text-neutral-500">
-                                    <span className="font-serif italic">-{item.title}-</span>
+                                    <span className="font-serif italic">{i+1}. {item.title}</span>
                                 </figcaption>
                             </motion.figure>
                         ))}

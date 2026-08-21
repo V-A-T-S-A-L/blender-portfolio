@@ -76,6 +76,10 @@ export const renders = [
     title: "The Last Shrine",
   },
   {
+    src: "renders/frequency.jpg",
+    title: "The Cold Frequency",
+  },
+  {
     src: "renders/stagnant-crossing.jpg",
     title: "Stagnant Crossing",
   },
