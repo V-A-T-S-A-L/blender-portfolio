@@ -6,9 +6,23 @@ import Header from "@/components/header"
 import { renders } from "@/lib/renders"
 import { Heart } from "lucide-react"
 import LoadingScreen from "@/components/loading-screen"
+import ReactCompareImage from "react-compare-image"
+import { ImgComparisonSlider } from "@img-comparison-slider/react"
 
 export default function GalleryPage() {
     const [active, setActive] = useState<null | typeof renders[0]>(null)
+
+    interface RenderItem {
+        src: string;
+        title: string;
+        raw?: string;
+        year?: string;
+    }
+
+    interface ModalProps {
+        active: RenderItem | null;
+        setActive: (item: RenderItem | null) => void;
+    }
 
     return (
         <>
@@ -61,7 +75,7 @@ export default function GalleryPage() {
                                 </div>
 
                                 <figcaption className="mt-3 flex justify-between text-xs text-neutral-500">
-                                    <span className="font-serif italic">{i+1}. {item.title}</span>
+                                    <span className="font-serif italic">{i + 1}. {item.title}</span>
                                 </figcaption>
                             </motion.figure>
                         ))}
@@ -75,7 +89,7 @@ export default function GalleryPage() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="fixed inset-0 z-100 bg-black/90 backdrop-blur-sm flex items-center justify-center p-6"
+                            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-sm flex items-center justify-center p-6"
                             onClick={() => setActive(null)}
                         >
                             <motion.div
@@ -84,24 +98,38 @@ export default function GalleryPage() {
                                 exit={{ scale: 0.96, opacity: 0 }}
                                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                                 className="relative flex flex-col items-center max-w-[95vw] max-h-[95vh]"
-                                onClick={(e) => e.stopPropagation()}
+                                onClick={(e: React.MouseEvent) => e.stopPropagation()}
                             >
-                                <img
-                                    src={active.src}
-                                    alt={active.title}
-                                    className="
-                        max-w-[95vw]
-                        max-h-[85vh]
-                        w-auto
-                        h-auto
-                        object-contain
-                        rounded-lg
-                    "
-                                />
+                                {active.raw ? (
+                                    <ImgComparisonSlider value={100} className="rounded-lg outline-none focus:outline-none max-w-[95vw] max-h-[85vh]">
+                                        <img
+                                            slot="first"
+                                            src={active.src}
+                                            alt={`${active.title} Render`}
+                                            className="max-w-[95vw] max-h-[85vh] w-auto h-auto object-contain pointer-events-none block rounded-lg"
+                                        />
+                                        <img
+                                            slot="second"
+                                            src={active.raw}
+                                            alt={`${active.title} Raw`}
+                                            className="max-w-[95vw] max-h-[85vh] w-auto h-auto object-contain pointer-events-none block rounded-lg"
+                                        />
+                                    </ImgComparisonSlider>
+                                ) : (
+                                    <img
+                                        src={active.src}
+                                        alt={active.title}
+                                        className="max-w-[95vw] max-h-[85vh] w-auto h-auto object-contain rounded-lg"
+                                    />
+                                )}
 
                                 <div className="mt-4 w-full flex justify-between text-sm text-neutral-400">
                                     <span className="font-serif italic">{active.title}</span>
-                                    {/* <span>{active.year}</span> */}
+                                    {active.raw && (
+                                        <span className="text-xs text-neutral-500 font-mono">
+                                            Drag to compare
+                                        </span>
+                                    )}
                                 </div>
                             </motion.div>
                         </motion.div>

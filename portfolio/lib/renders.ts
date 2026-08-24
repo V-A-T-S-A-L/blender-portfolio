@@ -5,6 +5,7 @@ export const renders = [
   },
   {
     src: "renders/stranded.jpg",
+    raw: "raw/stranded.png",
     title: "Stranded",
   },
   {
@@ -13,6 +14,7 @@ export const renders = [
   },
   {
     src: "renders/neon.jpg",
+    raw: "raw/neon.png",
     title: "Neon Nights",
   },
   {
@@ -29,6 +31,7 @@ export const renders = [
   },
   {
     src: "renders/blinding.jpg",
+    raw: "raw/blinding.png",
     title: "Blinding Lights",
   },
   {
@@ -41,6 +44,7 @@ export const renders = [
   },
   {
     src: "renders/relic.jpg",
+    raw: "raw/relic.png",
     title: "Posthuman ARTEFACT",
   },
   {
@@ -61,6 +65,7 @@ export const renders = [
   },
   {
     src: "renders/celestial.jpg",
+    raw: "raw/celestial.png",
     title: "Celestial Equilibrium",
   },
   {
@@ -73,10 +78,12 @@ export const renders = [
   },
   {
     src: "renders/shrine.jpg",
+    raw: "raw/shrine.png",
     title: "The Last Shrine",
   },
   {
     src: "renders/frequency.jpg",
+    raw: "raw/frequency.png",
     title: "The Cold Frequency",
   },
   {
@@ -89,10 +96,12 @@ export const renders = [
   },
   {
     src: "renders/midas.jpg",
+    raw: "raw/midas.png",
     title: "Midas Touch",
   },
   {
     src: "renders/origins.jpg",
+    raw: "raw/origins.png",
     title: "ORIGINS",
   },
   {
