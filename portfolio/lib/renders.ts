@@ -4,6 +4,11 @@ export const renders = [
     title: "The Eerie",
   },
   {
+    src: "renders/deadhour.jpg",
+    raw: "raw/deadhour.png",
+    title: "Dead Hour",
+  },
+  {
     src: "renders/stranded.jpg",
     raw: "raw/stranded.png",
     title: "Stranded",
@@ -43,13 +48,13 @@ export const renders = [
     title: "Tethered Schism",
   },
   {
+    src: "renders/weave.jpg",
+    title: "Weaving Realities",
+  },
+  {
     src: "renders/relic.jpg",
     raw: "raw/relic.png",
     title: "Posthuman ARTEFACT",
-  },
-  {
-    src: "renders/weave.jpg",
-    title: "Weaving Realities",
   },
   {
     src: "renders/summit.jpg",
