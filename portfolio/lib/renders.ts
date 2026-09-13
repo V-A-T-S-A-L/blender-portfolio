@@ -96,6 +96,11 @@ export const renders = [
     title: "Stagnant Crossing",
   },
   {
+    src: "renders/scopa.jpg",
+    raw: "raw/scopa.png",
+    title: "Scopaesthesia",
+  },
+  {
     src: "renders/gilded-medium.jpg",
     title: "Gilded Medium",
   },
