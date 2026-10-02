@@ -61,9 +61,9 @@ export const renders = [
     title: "The Summit of Five Lights",
   },
   {
-    src: "renders/crimson.jpg",
-    raw: "raw/crimson.png",
-    title: "Crimson Horizon",
+    src: "renders/twilight.jpg",
+    raw: "raw/twilight.png",
+    title: "Twilight",
   },
   {
     src: "renders/theia.jpg",
